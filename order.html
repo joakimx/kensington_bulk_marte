@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+html , body {
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+  }
+
+#select {
+    float: left;
+    position: relative;
+}
+
+
+#form {
+	 float: left;
+	 height: 100px;
+	 padding: 5px;
+}
+
+#section {
+	height: 300px;
+	width: 300px;
+	float: left;
+   padding: 35px;
+}
+</style>
+
+<body>
+<script>
+    function success() {
+        alert("Success! Thanks for shopping with Bulk Marte!");
+    }
+    function reject() {
+        alert("Order Cancelled! Hope to see you next time!");
+    }
+</script>
+
+<tr>
+    <div id="section">
+  <td>
+    <select id="select">
+        <option value="">Bulk Nuts</option>
+        <option value="">Almonds ($13.99/lbs)</option>
+        <option value="">Peanuts ($4.99/lbs)</option>
+        <option value="">Cashews ($17.00/lbs)</option>
+    </select>
+  </td>
+
+    <form action="" id="form">
+        Grab some nuts: <input type="text" name="nuts"><br>
+        <input type="submit" value="Submit">
+    </form> 
+    </div>
+
+    <div id="section">
+  <td>
+    <select id="select">
+        <option value="">Bulk Fruits</option>
+       <option value="">Apples ($4.99/lbs)</option>
+       <option value="">Pears ($2.99/lbs)</option>
+       <option value="">Bananas ($3.00/lbs)</option>
+    </select>
+  </td>
+
+    <form action="" id="form">
+      Get fruity with it: <input type="text" name="fruits"><br>
+        <input type="submit" value="Submit">
+    </form> 
+    </div>
+
+    <div id="section">
+  <td>
+    <select id="select">
+        <option value="">Bulk Veggies</option>
+        <option value="">Okra ($1.00/lbs)</option>
+        <option value="">Cabbage ($3.65/lbs)</option>
+        <option value="">Spinach ($1.99/lbs)</option>
+    </select>
+  </td>
+    <form action="" id="form">
+        Add veggies to bag: <input type="text" name="veggies"><br>
+      <input type="submit" value="Submit">
+    </form> 
+    </div>
+</tr>
+<br>
+    <div>
+    <form action="" id="form">
+  <input type="button" value="Order Now" onclick="success()"><br><br>
+  <input type="button" value="Cancel Order??" onclick="reject()"><br><br>
+  
+    </form> 
+    </div>
+</body>
+</html>
